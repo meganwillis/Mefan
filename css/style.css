@@ -434,3 +434,7 @@ nav ul{list-style: none; padding-left: 0; overflow: hidden;}
 nav li{float:left; padding: 20px}
 nav li:first-child{padding-left: 0}
 nav a:hover{color:#DE43A2;}
+#catousel{width: 600px; height: 400px; overflow: hidden;}
+#catousel ul{list-style: none; padding: 0;}
+#catousel li{width: 600px; height: 400px; float:left;}
+#catousel img{width:100%;}
