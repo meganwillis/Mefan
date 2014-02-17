@@ -426,9 +426,10 @@ th {
 h1{color:#DE43A2; margin:0;}
 p{font-family:arial;}
 body{font-size:18px;}
+a{color:purple;}
 #wrapper{}
 .selected a{color:black; text-decoration: none}
-header{background-color: #eee; padding:15px;}
+header{background-color: #eee; padding:15px;margin-bottom: 20px}
 .centre{width:960px; margin:0 auto;}
 nav ul{list-style: none; padding-left: 0; overflow: hidden;}
 nav li{float:left; padding: 20px}
@@ -438,4 +439,11 @@ nav a:hover{color:#DE43A2;}
 #catousel ul{list-style: none; padding: 0; position: absolute;}
 #catousel li{width: 600px; height: 400px; float:left;}
 #catousel img{width:100%;}
-#next.disabled,#previous.disabled {color:gray; text-decoration: none; cursor: default;}
+#next.disabled,#previous.disabled {opacity: .50; text-decoration: none; cursor: default;}
+#catousel-wrapper {position: relative;}
+#catousel-nav {position: absolute; bottom: 0; padding: 10px; width: 580px;}
+#next {float:right;}
+label{display:block; margin-bottom: 5px}
+textarea{width:396px; height: 200px;}
+.fields{width:400px;float:left;}
+#translate{float:left; /* margin: top right bottom left; */ margin:100px 20px 0px 20px;}

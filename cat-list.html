@@ -16,6 +16,7 @@
 						<ul>
 							<li><a href="index.html">Home</a></li>
 							<li class="selected"><a href="cat-list.html">Cat list</a></li>
+							<li><a href="english-to-cat.html">Translate</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -23,18 +24,20 @@
 			<div class="centre">
 				<p>Dom, a different picture for you!</p>
 
-				<div id="catousel">
-					<ul>
-						<li><img src="img/gh4.jpg"/></li>
-						<li><img src="img/gh5.jpg"/></li>
-						<li><img src="img/gh6.jpg"/></li>
-						<li><img src="img/gh3.jpg"/></li>
-					</ul>
+				<div id="catousel-wrapper">
+					<div id="catousel">
+						<ul>
+							<li><img src="img/gh5.jpg"/></li>
+							<li><img src="img/gh6.jpg"/></li>
+							<li><img src="img/gh3.jpg"/></li>
+						</ul>
+					</div>
+					<div id="catousel-nav">
+						<a href="#" id="previous" class="disabled"><img src="img/cat-paw-left.png" alt="Previous"/></a>
+						<a href="#" id="next"><img src="img/cat-paw-right.png" alt="Next"/></a>
+					</div>
 				</div>
-				<div>
-					<a href="#" id="previous" class="disabled">Previous</a>
-					<a href="#" id="next">Next</a>
-				</div>
+
 				<ul id="catList">
 					<li>Cats are good</li>
 					<li>Cats are soft</li>

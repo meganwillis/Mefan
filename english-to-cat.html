@@ -14,18 +14,24 @@
 					<h1>CatteRY</h1>
 					<nav>
 						<ul>
-							<li class="selected"><a href="index.html">Home</a></li>
+							<li><a href="index.html">Home</a></li>
 							<li><a href="cat-list.html">Cat list</a></li>
-							<li><a href="english-to-cat.html">Translate</a></li>
+							<li class="selected"><a href="english-to-cat.html">Translate</a></li>
 						</ul>
 					</nav>
 				</div>
 			</header>
 
 			<div class="centre">
-				<p>I like nerds</p>
-				<img src="img/gh2.jpg" alt="cat mushroom" width="200"/>
-				<p><a href="cat-list.html">Reasons why cats</a></p>
+				<div class="fields">
+					<label for ="english">English</label>
+					<textarea id="english"></textarea>
+				</div>
+				<input type="Submit" value="Translate" id="translate"/>
+				<div class="fields">
+					<label for ="cat">Cat</label>
+					<textarea id="cat"></textarea>
+				</div>
 			</div>
 		</div>
 	</body>
