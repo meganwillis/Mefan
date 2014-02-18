@@ -5,6 +5,8 @@ $(document).ready(function() {
 
 	var carousel = new Carousel($("#catousel"));
 
+	$("#translate").click(translate);
+
 });
 
 function yeahtheyare()
@@ -83,5 +85,35 @@ function Carousel($catousel)
 	$("#previous").click(carouselClick);
 }
 
+//make it translate stuff
+function translate(){
+	var translatedwords = new Array();
 
+	//get text from english text box
+	var englishtext=$("#english").val();
+	//console.log(englishtext);
+	
+	//replace words with same length miaows
+	var englishwords=englishtext.split(" ");
+	console.log(englishwords);
 
+	//output text to cat text box
+	for(var i=0; i<englishwords.length; i++)
+	{
+		var lengthofword = englishwords[i].length;
+		var catword = "miaow";
+		/*
+		if (lengthofword>catword.length){
+
+		}*/
+		while (catword.length<lengthofword){
+			catword+="w";
+		}
+		translatedwords.push(catword);
+	}
+	console.log(translatedwords);
+
+	//preps text for cat text box
+	var cattext = translatedwords.join(" ");
+	$("#cat").val(cattext);
+}
