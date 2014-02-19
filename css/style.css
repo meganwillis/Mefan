@@ -427,10 +427,10 @@ h1{color:#DE43A2; margin:0;}
 p{font-family:arial;}
 body{font-size:18px;}
 a{color:purple;}
-#wrapper{}
+#wrapper{padding-bottom: 50px}
 .selected a{color:black; text-decoration: none}
 header{background-color: #eee; padding:15px;margin-bottom: 20px}
-.centre{width:960px; margin:0 auto;}
+.centre{width:960px; margin:0 auto; overflow:hidden;}
 nav ul{list-style: none; padding-left: 0; overflow: hidden;}
 nav li{float:left; padding: 20px}
 nav li:first-child{padding-left: 0}
@@ -447,3 +447,6 @@ label{display:block; margin-bottom: 5px}
 textarea{width:396px; height: 200px;}
 .fields{width:400px;float:left;}
 #translate{float:left; /* margin: top right bottom left; */ margin:100px 20px 0px 20px;}
+table{width:700px; text-align: left; margin-top: 50px;}
+th{border-bottom: 2px solid #DE43A2; width: 20%; padding-bottom: 3px}
+td{padding-top: 3px}
