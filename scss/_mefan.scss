@@ -1,0 +1,128 @@
+/*mefanstyles*/
+$pink:#DE43A2;
+$teal:#588;
+$darkgrey: #555;
+
+html{
+	overflow-y:scroll;
+}
+h1{
+	color:$pink;
+	margin:0;
+}
+h2{
+	color:$darkgrey; 
+	margin:0px 0px -10px 0px;
+}
+p{
+	font-family:arial;
+}
+body{
+	font-size:18px;
+}
+a, a:visited{
+	color:$teal;
+}
+#wrapper{
+	padding-bottom: 50px;
+}
+.selected a{
+	color:black; 
+	text-decoration: none;
+}
+header{
+	background-color: #eee; 
+	padding:15px;
+	margin-bottom: 20px;
+}
+.centre{
+	width:960px; 
+	margin:0 auto; 
+	overflow:hidden;
+}
+nav ul{
+	list-style: none; 
+	padding-left: 0; 
+	overflow: hidden;
+}
+nav li{
+	float:left; 
+	padding: 20px;
+}
+nav li:first-child{
+	padding-left: 0;
+}
+nav a:hover{
+	color:$pink;
+	@include transition(.2s); 
+}
+
+#catousel{
+	width: 600px; 
+	height: 400px; 
+	overflow: hidden; 
+	position: relative;
+
+	ul{
+		list-style: none; 
+		padding: 0; 
+		position: absolute;
+	}
+
+	li{
+		width: 600px; 
+		height: 400px; 
+		float:left;
+	}
+
+	img{
+		width:100%;
+	}
+}
+
+#next.disabled,#previous.disabled {
+	opacity: .50; 
+	text-decoration: none; 
+	cursor: default;
+}
+#catousel-wrapper {
+	position: relative;
+}
+#catousel-nav {
+	position: absolute; 
+	bottom: 0; 
+	padding: 10px; 
+	width: 580px;
+}
+#next {
+	float:right;
+}
+label{
+	display:block; 
+	margin-bottom: 5px;
+}
+textarea{
+	width:396px; 
+	height: 200px;
+}
+.fields{
+	width:400px;
+	float:left;
+}
+#translate{
+	float:left; 
+	margin:100px 20px 0px 20px;
+}
+table{
+	width:700px; 
+	text-align: left; 
+	margin-top: 50px;
+}
+th{
+	border-bottom: 2px solid $pink; 
+	width: 20%; 
+	padding-bottom: 3px;
+}
+td{
+	padding-top: 3px;
+}

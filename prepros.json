@@ -1,0 +1,164 @@
+{
+  "id": "3e283a6e",
+  "cfgVersion": 1,
+  "name": "mefan",
+  "files": {
+    "ff82a0ad": {
+      "id": "ff82a0ad",
+      "pid": "3e283a6e",
+      "name": "scripts.js",
+      "input": "js\\scripts.js",
+      "customOutput": false,
+      "type": "Js",
+      "config": {
+        "autoCompile": true,
+        "uglify": true,
+        "mangle": true,
+        "sourcemaps": false
+      }
+    },
+    "7e70da7e": {
+      "id": "7e70da7e",
+      "pid": "3e283a6e",
+      "name": "style.scss",
+      "input": "scss\\style.scss",
+      "customOutput": false,
+      "type": "Scss",
+      "config": {
+        "autoCompile": true,
+        "lineNumbers": false,
+        "unixNewlines": false,
+        "debug": false,
+        "compass": true,
+        "fullCompass": false,
+        "outputStyle": "expanded",
+        "compassConfigRb": false,
+        "autoprefixer": false,
+        "sourcemaps": false
+      }
+    }
+  },
+  "imports": {
+    "31462c45": {
+      "id": "31462c45",
+      "pid": "3e283a6e",
+      "path": "scss\\_normalize.scss",
+      "parents": [
+        "7e70da7e"
+      ]
+    },
+    "dd0151cd": {
+      "id": "dd0151cd",
+      "pid": "3e283a6e",
+      "path": "scss\\_mefan.scss",
+      "parents": [
+        "7e70da7e"
+      ]
+    }
+  },
+  "images": {
+    "d26d8bc9": {
+      "id": "d26d8bc9",
+      "pid": "3e283a6e",
+      "path": "img\\cat-paw-left.png",
+      "size": 783,
+      "name": "cat-paw-left.png",
+      "type": "Png",
+      "initialSize": 783,
+      "status": "NOT_OPTIMIZED"
+    },
+    "e04d5474": {
+      "id": "e04d5474",
+      "pid": "3e283a6e",
+      "path": "img\\cat-paw-right.png",
+      "size": 769,
+      "name": "cat-paw-right.png",
+      "type": "Png",
+      "initialSize": 769,
+      "status": "NOT_OPTIMIZED"
+    },
+    "1da2c5a5": {
+      "id": "1da2c5a5",
+      "pid": "3e283a6e",
+      "path": "img\\gh2.jpg",
+      "size": 67211,
+      "name": "gh2.jpg",
+      "type": "Jpg",
+      "initialSize": 67211,
+      "status": "NOT_OPTIMIZED"
+    },
+    "d30fb710": {
+      "id": "d30fb710",
+      "pid": "3e283a6e",
+      "path": "img\\gh3.jpg",
+      "size": 4319,
+      "name": "gh3.jpg",
+      "type": "Jpg",
+      "initialSize": 4319,
+      "status": "NOT_OPTIMIZED"
+    },
+    "c3c704b6": {
+      "id": "c3c704b6",
+      "pid": "3e283a6e",
+      "path": "img\\gh4.jpg",
+      "size": 6203,
+      "name": "gh4.jpg",
+      "type": "Jpg",
+      "initialSize": 6203,
+      "status": "NOT_OPTIMIZED"
+    },
+    "1a1e8622": {
+      "id": "1a1e8622",
+      "pid": "3e283a6e",
+      "path": "img\\gh5.jpg",
+      "size": 145459,
+      "name": "gh5.jpg",
+      "type": "Jpg",
+      "initialSize": 145459,
+      "status": "NOT_OPTIMIZED"
+    },
+    "cd023433": {
+      "id": "cd023433",
+      "pid": "3e283a6e",
+      "path": "img\\gh6.jpg",
+      "size": 4585,
+      "name": "gh6.jpg",
+      "type": "Jpg",
+      "initialSize": 4585,
+      "status": "NOT_OPTIMIZED"
+    }
+  },
+  "config": {
+    "watch": true,
+    "liveRefresh": true,
+    "liveRefreshDelay": 0,
+    "filterPatterns": "",
+    "useCustomServer": false,
+    "customServerUrl": "",
+    "cssPath": "css",
+    "jsPath": "js",
+    "htmlPath": "html",
+    "minJsPath": "min",
+    "htmlExtension": ".html",
+    "cssPathType": "REPLACE_TYPE",
+    "htmlPathType": "REPLACE_TYPE",
+    "jsPathType": "REPLACE_TYPE",
+    "minJsPathType": "RELATIVE_FILEDIR",
+    "htmlTypes": "jade, haml, slim, markdown, md",
+    "cssTypes": "less, sass, stylus, scss, styl",
+    "jsTypes": "coffee, coffeescript, coffeescripts, ls, livescript, livescripts",
+    "cssPreprocessorPath": "",
+    "htmlPreprocessorPath": "",
+    "jsPreprocessorPath": "",
+    "minJsPreprocessorPath": "",
+    "autoprefixerBrowsers": "",
+    "ftpHost": "",
+    "ftpPort": "21",
+    "ftpRemotePath": "",
+    "ftpIgnorePreprocessorFiles": true,
+    "ftpType": "FTP",
+    "ftpExcludePatterns": "",
+    "ftpPassword": "",
+    "ftpUsername": ""
+  }
+}
