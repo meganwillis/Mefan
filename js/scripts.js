@@ -19,9 +19,15 @@ function Carousel($catousel)
 {
 	//Finds width of container
 	var width = $catousel.width();
+	var height = width/1.5;
+
+	$("#catousel-nav").width(width-20);
 
 	//finds number of slides
 	var numberofslides = $catousel.find("li").length;
+
+	$catousel.width(width).height(height);
+	$catousel.find("li").width(width).height(height);
 
 	//multiplies width of container with number of slides
 	var ulwidth = width*numberofslides;

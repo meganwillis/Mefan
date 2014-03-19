@@ -38,11 +38,24 @@ header{
 	background-color: #eee; 
 	padding:15px;
 	margin-bottom: 20px;
+
+	@media (max-width:550px) {
+		font-size:14px;
+	}
+
+	@media (max-width:440px){
+		font-size:12px;
+	}
+
+	@media (max-width:400px){
+		font-size:10px;
+	}
 }
 .centre{
-	width:960px; 
+	padding:0 10px;
 	margin:0 auto; 
 	overflow:hidden;
+	max-width: 1060px;
 }
 nav ul{
 	text-align:center;
@@ -54,7 +67,10 @@ nav ul{
 }
 nav li{
 	display:inline-block; 
-	padding: 20px;
+	padding: 1em;
+	@media (max-width:550px) {
+		font-size:1.3em;
+	}	
 }
 nav a:hover{
 	@include transition(.2s);
@@ -62,7 +78,7 @@ nav a:hover{
 }
 
 #catousel{
-	width: 600px; 
+	max-width: 600px; 
 	height: 400px; 
 	overflow: hidden; 
 	position: relative;
@@ -74,7 +90,7 @@ nav a:hover{
 	}
 
 	li{
-		width: 600px; 
+		max-width: 600px; 
 		height: 400px; 
 		float:left;
 	}
@@ -96,7 +112,7 @@ nav a:hover{
 	position: absolute; 
 	bottom: 0; 
 	padding: 10px; 
-	width: 580px;
+	max-width: 580px;
 }
 #next {
 	float:right;
@@ -106,19 +122,28 @@ label{
 	margin-bottom: 5px;
 }
 textarea{
-	width:396px; 
+	width:296px; 
 	height: 200px;
 }
 .fields{
-	width:400px;
+	width:300px;
 	float:left;
+	
+	@media (max-width:810px){
+		float:none;
+	}
 }
 #translate{
 	float:left; 
 	margin:100px 20px 0px 20px;
+	
+	@media (max-width:810px){
+		float:none;
+		margin:15px 0;
+	}
 }
 table{
-	width:700px; 
+	max-width:700px; 
 	text-align: left; 
 	margin-top: 50px;
 }

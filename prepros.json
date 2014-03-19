@@ -54,6 +54,14 @@
       "parents": [
         "7e70da7e"
       ]
+    },
+    "279d5270": {
+      "id": "279d5270",
+      "pid": "3e283a6e",
+      "path": "scss\\_responsivetables.scss",
+      "parents": [
+        "7e70da7e"
+      ]
     }
   },
   "images": {

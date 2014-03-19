@@ -440,11 +440,27 @@ header {
   padding: 15px;
   margin-bottom: 20px;
 }
+@media (max-width: 550px) {
+  header {
+    font-size: 14px;
+  }
+}
+@media (max-width: 440px) {
+  header {
+    font-size: 12px;
+  }
+}
+@media (max-width: 400px) {
+  header {
+    font-size: 10px;
+  }
+}
 
 .centre {
-  width: 960px;
+  padding: 0 10px;
   margin: 0 auto;
   overflow: hidden;
+  max-width: 1060px;
 }
 
 nav ul {
@@ -458,7 +474,12 @@ nav ul {
 
 nav li {
   display: inline-block;
-  padding: 20px;
+  padding: 1em;
+}
+@media (max-width: 550px) {
+  nav li {
+    font-size: 1.3em;
+  }
 }
 
 nav a:hover {
@@ -470,7 +491,7 @@ nav a:hover {
 }
 
 #catousel {
-  width: 600px;
+  max-width: 600px;
   height: 400px;
   overflow: hidden;
   position: relative;
@@ -481,7 +502,7 @@ nav a:hover {
   position: absolute;
 }
 #catousel li {
-  width: 600px;
+  max-width: 600px;
   height: 400px;
   float: left;
 }
@@ -503,7 +524,7 @@ nav a:hover {
   position: absolute;
   bottom: 0;
   padding: 10px;
-  width: 580px;
+  max-width: 580px;
 }
 
 #next {
@@ -516,22 +537,33 @@ label {
 }
 
 textarea {
-  width: 396px;
+  width: 296px;
   height: 200px;
 }
 
 .fields {
-  width: 400px;
+  width: 300px;
   float: left;
+}
+@media (max-width: 810px) {
+  .fields {
+    float: none;
+  }
 }
 
 #translate {
   float: left;
   margin: 100px 20px 0px 20px;
 }
+@media (max-width: 810px) {
+  #translate {
+    float: none;
+    margin: 15px 0;
+  }
+}
 
 table {
-  width: 700px;
+  max-width: 700px;
   text-align: left;
   margin-top: 50px;
 }
@@ -544,4 +576,78 @@ th {
 
 td {
   padding-top: 3px;
+}
+
+@media only screen and (max-width: 760px), (min-device-width: 768px) and (max-device-width: 1024px) {
+  /* Force table to not be like tables anymore */
+  table, thead, tbody, th, td, tr {
+    display: block;
+  }
+
+  /* Hide table headers (but not display: none;, for accessibility) */
+  thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  tr {
+    border: 1px solid #ccc;
+  }
+
+  td {
+    /* Behave  like a "row" */
+    border: none;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 50%;
+  }
+
+  td:before {
+    /* Now like a table header */
+    position: absolute;
+    /* Top/left values mimic padding */
+    top: 6px;
+    left: 6px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+  }
+
+  /*
+  Label the data
+  */
+  td:nth-of-type(1):before {
+    content: "Name";
+  }
+
+  td:nth-of-type(2):before {
+    content: "Age";
+  }
+
+  td:nth-of-type(3):before {
+    content: "Alive?";
+  }
+
+  td:nth-of-type(4):before {
+    content: "Colour";
+  }
+
+  td:nth-of-type(5):before {
+    content: "Number of legs";
+  }
+}
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  body {
+    padding: 0;
+    margin: 0;
+    width: 320px;
+  }
+}
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  body {
+    width: 495px;
+  }
 }
